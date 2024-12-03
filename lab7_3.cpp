@@ -1,9 +1,15 @@
 #include<iostream>
 using namespace std;
 
-char before(char x){
-	//Write your function definition here
+char before(char x) {
+    if (x >= 'A' && x <= 'Z') {
+        char a = x - 1;
+        return a < 'A' ? 'Z' : a;
+    } else {
+        return '0';
+    }
 }
+
 
 int main(){
 	//Test Case
